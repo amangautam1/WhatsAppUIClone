@@ -1,6 +1,11 @@
-# whatsappclone
+# WhatsApp UI Clone with Flutter
 
-A new Flutter project.
+A WhatsApp UI clone using flutter, almost similar to the original one. 
+
+Thanks to <a href="https://github.com/iampawan">Pawan kumar</a> for his easy tutorials of flutter.
+
+ScreenShot
+
 
 ## Getting Started
 
