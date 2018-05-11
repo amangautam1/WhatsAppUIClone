@@ -6,7 +6,7 @@ Thanks to <a href="https://github.com/iampawan">Pawan kumar</a> for his tutorial
 
 # ScreenShot
 
-<img src="images/demo.gif" height=200 width=120/>
+<img src="images/demo.gif" height=300 width=170/>
 
 
 
