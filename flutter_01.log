@@ -1,0 +1,122 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter build bundle --suppress-analytics --target C:\flutterprojects\whatsappclone\lib\main.dart --no-preview-dart-2 --depfile C:\flutterprojects\whatsappclone\build\app\intermediates\flutter\debug/snapshot_blob.bin.d --snapshot C:\flutterprojects\whatsappclone\build\app\intermediates\flutter\debug/snapshot_blob.bin --asset-dir C:\flutterprojects\whatsappclone\build\app\intermediates\flutter\debug/flutter_assets
+
+## exception
+
+FileSystemException: FileSystemException: Cannot open file, path = 'C:\flutter\bin\cache\downloads\storage.googleapis.com\flutter_infra\flutter\09d05a38912a3c1a906e95099cac9a7e14fae85f\android-arm64-release\artifacts.zip' (OS Error: The system cannot find the path specified.
+, errno = 3)
+
+```
+#0      _File.throwIfError (dart:io/file_impl.dart:628)
+#1      _File.openSync (dart:io/file_impl.dart:472)
+#2      _File.writeAsBytesSync (dart:io/file_impl.dart:597)
+#3      LocalFileSystemEntity&ForwardingFile.writeAsBytesSync (package:file/src/forwarding/forwarding_file.dart:124)
+#4      _downloadFile (package:flutter_tools/src/cache.dart:552)
+<asynchronous suspension>
+#5      CachedArtifact._downloadArchive.<anonymous closure> (package:flutter_tools/src/cache.dart:285)
+<asynchronous suspension>
+#6      CachedArtifact._withDownloadFile (package:flutter_tools/src/cache.dart:311)
+<asynchronous suspension>
+#7      CachedArtifact._downloadArchive (package:flutter_tools/src/cache.dart:282)
+#8      CachedArtifact._downloadZipArchive (package:flutter_tools/src/cache.dart:298)
+#9      FlutterEngine.updateInner (package:flutter_tools/src/cache.dart:470)
+<asynchronous suspension>
+#10     CachedArtifact.update (package:flutter_tools/src/cache.dart:245)
+<asynchronous suspension>
+#11     Cache.updateAll (package:flutter_tools/src/cache.dart:201)
+<asynchronous suspension>
+#12     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:317)
+<asynchronous suspension>
+#13     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:270)
+<asynchronous suspension>
+#14     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142)
+<asynchronous suspension>
+#15     _rootRun (dart:async/zone.dart:1126)
+#16     _CustomZone.run (dart:async/zone.dart:1023)
+#17     runZoned (dart:async/zone.dart:1501)
+#18     AppContext.run (package:flutter_tools/src/base/context.dart:141)
+<asynchronous suspension>
+#19     FlutterCommand.run (package:flutter_tools/src/runner/flutter_command.dart:261)
+#20     CommandRunner.runCommand (package:args/command_runner.dart:194)
+<asynchronous suspension>
+#21     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:309)
+<asynchronous suspension>
+#22     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142)
+<asynchronous suspension>
+#23     _rootRun (dart:async/zone.dart:1126)
+#24     _CustomZone.run (dart:async/zone.dart:1023)
+#25     runZoned (dart:async/zone.dart:1501)
+#26     AppContext.run (package:flutter_tools/src/base/context.dart:141)
+<asynchronous suspension>
+#27     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:265)
+<asynchronous suspension>
+#28     CommandRunner.run.<anonymous closure> (package:args/command_runner.dart:109)
+#29     new Future.sync (dart:async/future.dart:224)
+#30     CommandRunner.run (package:args/command_runner.dart:109)
+#31     FlutterCommandRunner.run (package:flutter_tools/src/runner/flutter_command_runner.dart:174)
+#32     run.<anonymous closure> (package:flutter_tools/runner.dart:54)
+<asynchronous suspension>
+#33     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142)
+<asynchronous suspension>
+#34     _rootRun (dart:async/zone.dart:1126)
+#35     _CustomZone.run (dart:async/zone.dart:1023)
+#36     runZoned (dart:async/zone.dart:1501)
+#37     AppContext.run (package:flutter_tools/src/base/context.dart:141)
+<asynchronous suspension>
+#38     runInContext (package:flutter_tools/src/context_runner.dart:41)
+<asynchronous suspension>
+#39     run (package:flutter_tools/runner.dart:49)
+#40     main (package:flutter_tools/executable.dart:48)
+<asynchronous suspension>
+#41     main (file:///C:/flutter/packages/flutter_tools/bin/flutter_tools.dart:8)
+#42     _startIsolate.<anonymous closure> (dart:isolate-patch/dart:isolate/isolate_patch.dart:277)
+#43     _RawReceivePortImpl._handleMessage (dart:isolate-patch/dart:isolate/isolate_patch.dart:165)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v0.3.2, on Microsoft Windows [Version 10.0.16299.251], locale en-IN)
+    • Flutter version 0.3.2 at C:\flutter
+    • Framework revision 44b7e7d3f4 (2 weeks ago), 2018-04-20 01:02:44 -0700
+    • Engine revision 09d05a3891
+    • Dart version 2.0.0-dev.48.0.flutter-fe606f890b
+
+[!] Android toolchain - develop for Android devices (Android SDK 27.0.3)
+    • Android SDK at C:\Android\sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-27, build-tools 27.0.3
+    • ANDROID_HOME = C:\Android\sdk
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b02)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[✓] Android Studio (version 3.0)
+    • Android Studio at C:\Program Files\Android Studio
+    • Flutter plugin version 22.2.1
+    • Dart plugin version 171.4424
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-915-b01)
+
+[✓] Android Studio (version 3.1)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 22.2.1
+    • Dart plugin version 171.4424
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b02)
+
+[✓] IntelliJ IDEA Community Edition (version 2018.1)
+    • IntelliJ at C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.1.1
+    • Flutter plugin version 23.2.3
+    • Dart plugin version 181.4445.29
+
+[✓] VS Code, 64-bit edition (version 1.21.1)
+    • VS Code at C:\Program Files\Microsoft VS Code
+    • Dart Code extension version 2.11.1
+
+[!] Connected devices
+    ! No devices available
+
+! Doctor found issues in 2 categories.
+```
