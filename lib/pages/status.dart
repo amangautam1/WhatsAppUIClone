@@ -19,7 +19,7 @@ class _statusState extends State<status> {
               "https://www.includehelp.com/Members/images/aman-gautam.jpg"),
         ),
         title: new Text(
-          "Aman gautam",
+          "My status",
           style: new TextStyle(fontWeight: FontWeight.bold),
         ),
         subtitle: new Text("Tap to add status update"),

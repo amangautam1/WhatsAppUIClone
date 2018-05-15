@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-class camera extends StatefulWidget{
+
+class camera extends StatefulWidget {
   List<CameraDescription> cameras;
   camera(this.cameras);
   @override
@@ -8,32 +9,30 @@ class camera extends StatefulWidget{
     return new CameraState();
   }
 }
-class CameraState extends State<camera>{
+
+class CameraState extends State<camera> {
   CameraController controller;
   @override
   void initState() {
     super.initState();
-    controller=CameraController(widget.cameras[0],ResolutionPreset.medium);
-    controller.initialize().then((_){
-      if(mounted)
-        return;
-      setState(() {
-      });
+    controller = CameraController(widget.cameras[0], ResolutionPreset.medium);
+    controller.initialize().then((_) {
+      if (mounted) return;
+      setState(() {});
     });
   }
+
   @override
   Widget build(BuildContext context) {
-  if(!controller.value.initialized){
-    print("not connected");
-    return new Container();
-
-  }
-  return new Container(
-    child:new AspectRatio(
-    aspectRatio: controller.value.aspectRatio,
-    child: CameraPreview(controller),
-     )
-    );
+    if (!controller.value.initialized) {
+      print("not connected");
+      return new Container();
+    }
+    return new Container(
+        child: new AspectRatio(
+      aspectRatio: controller.value.aspectRatio,
+      child: CameraPreview(controller),
+    ));
   }
 
   @override
@@ -41,5 +40,4 @@ class CameraState extends State<camera>{
     controller?.dispose();
     super.dispose();
   }
-
 }

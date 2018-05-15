@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whatsappclone/camera_full.dart';
-import 'package:whatsappclone/contacts.dart';
-import 'package:whatsappclone/new_call.dart';
+import 'package:whatsappclone/view/camera_full.dart';
+import 'package:whatsappclone/view/Contacts.dart';
+import 'package:whatsappclone/view/new_call.dart';
 import 'package:whatsappclone/pages/calls.dart';
 import 'package:whatsappclone/pages/camera.dart';
 import 'package:whatsappclone/pages/chats.dart';
@@ -51,7 +51,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
           indicatorColor: Colors.white,
           tabs: <Widget>[
             new Tab(
-              icon: new Icon(Icons.camera_alt),
+              child: new Icon(Icons.camera_alt),
             ),
             new Tab(text: "CHATS"),
             new Tab(text: "STATUS"),
