@@ -4,6 +4,8 @@ A WhatsApp UI clone using flutter, almost similar to the original one.
 
 Thanks to <a href="https://github.com/iampawan">Pawan kumar</a> for his tutorials and videos for flutter. 
 
+Star this repo if you like it.
+
 # ScreenShot
 <img src="https://github.com/amangautam1/WhatsAppUIClone/blob/master/images/Screenshot_2018-05-13-00-01-14-278_com.yourcompany.whatsappclone.png" height=300 width=170 />
 
