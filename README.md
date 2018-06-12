@@ -18,3 +18,8 @@ Star this repo if you like it.
 
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/amangautam1/WhatsAppUIClone/badge.svg?style=beer-square)](https://beerpay.io/amangautam1/WhatsAppUIClone)  [![Beerpay](https://beerpay.io/amangautam1/WhatsAppUIClone/make-wish.svg?style=flat-square)](https://beerpay.io/amangautam1/WhatsAppUIClone?focus=wish)
