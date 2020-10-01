@@ -9,7 +9,7 @@ Star this repo if you like it.
 # ScreenShot
 <img src="https://github.com/amangautam1/WhatsAppUIClone/blob/master/images/Screenshot_2018-05-13-00-01-14-278_com.yourcompany.whatsappclone.png" height=300 width=170 />
 
-# Demo
+# Demo video available here
 <img src="images/demo.gif" height=300 width=170/>
 
 
